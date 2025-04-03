@@ -15,6 +15,6 @@ Jeslyn Do
 IVC Email: jdo47@ivc.edu
 Discord: jslyns
 
-raine ng
+Raine Ng
 IVC Email: rng40@ivc.edu
 Discord: raindropped
