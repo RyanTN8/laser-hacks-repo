@@ -1,7 +1,7 @@
-## Laser Hacks 2025
+# Laser Hacks 2025
 Project: 
 
-# Collaboraters: 
+### Collaboraters: 
 
 Jack Featherston
 IVC Email: jfeatherston0@ivc.edu
