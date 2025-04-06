@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Set Up Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      background-image: url("https://www.desertsun.com/gcdn/authoring/authoring-images/2024/08/16/NVIC/74832208007-irvine-valley-college-3.jpg?crop=1598,1197,x128,y0");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .interest-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .interest-container h1,
+    .interest-container p {
+      margin-bottom: 25px;
+      text-align: center;
+      color: #333;
+    }
+
+    .interest-container input[type="text"],
+    .interest-container input[type="email"],
+    .interest-container input[type="password"],
+    .interest-container select,
+    .dropdown-select select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .interest-container label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .interest-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: blue;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .interest-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .dropdown-select > div {
+      margin-bottom: 20px;
+    }
+
+    .dropdown-select select {
+      color: #333;
+    }
+
+    .brand-name p {
+      text-align: center;
+      color: rgb(0, 71, 137);
+      margin-top: 20px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="interest-container">
+    <h1 id="header1">Sign up</h1>
+    
+    <!-- <form action="/login" method="GET" autocomplete="on"> -->
+      <label for="interest-container">Tell us about yourself!</label>
+      <input type="text" id="name" name="name" placeholder="Enter full name" autocomplete="name" required />
+      <input type="email" id="ivc-email" name="ivc-email" placeholder="Enter your IVC Email" autocomplete="email" required />
+      <input type="password" id="ivc-password" name="ivc-password" placeholder="Enter your password" autocomplete="new-password" required />
+
+      <!--Major Dropdown-->
+      <div class="dropdown-select">
+        <div class="major-select">
+          <label for="major">Major</label>
+          <select name="major" id="major">
+            <option value="" disabled selected>Select your major</option>
+            <option value="Anthropology">Anthropology</option>
+            <option value="Art History">Art History</option>
+            <option value="English Literature">English Literature</option>
+            <option value="History">History</option>
+            <option value="Linguistics">Linguistics</option>
+            <option value="Philosophy">Philosophy</option>
+            <option value="Religious Studies">Religious Studies</option>
+            <option value="Music">Music</option>
+            <option value="Theater Arts">Theater Arts</option>
+            <option value="Creative Writing">Creative Writing</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Business Administration">Business Administration</option>
+            <option value="Economics">Economics</option>
+            <option value="Finance">Finance</option>
+            <option value="International Business">International Business</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Management">Management</option>
+            <option value="Human Resources">Human Resources</option>
+            <option value="Supply Chain Management">Supply Chain Management</option>
+            <option value="Entrepreneurship">Entrepreneurship</option>
+            <option value="Nursing">Nursing</option>
+            <option value="Biology">Biology</option>
+            <option value="Public Health">Public Health</option>
+            <option value="Pharmacy">Pharmacy</option>
+            <option value="Dentistry">Dentistry</option>
+            <option value="Physical Therapy">Physical Therapy</option>
+            <option value="Occupational Therapy">Occupational Therapy</option>
+            <option value="Medical Laboratory Science">Medical Laboratory Science</option>
+            <option value="Nutrition">Nutrition</option>
+            <option value="Pre-Medical Studies">Pre-Medical Studies</option>
+            <option value="Psychology">Psychology</option>
+            <option value="Sociology">Sociology</option>
+            <option value="Political Science">Political Science</option>
+            <option value="International Relations">International Relations</option>
+            <option value="Criminal Justice">Criminal Justice</option>
+            <option value="Social Work">Social Work</option>
+            <option value="Urban Studies">Urban Studies</option>
+            <option value="Human Services">Human Services</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Environmental Science">Environmental Science</option>
+            <option value="Astronomy">Astronomy</option>
+            <option value="Geology">Geology</option>
+            <option value="Biochemistry">Biochemistry</option>
+            <option value="Early Childhood Education">Early Childhood Education</option>
+            <option value="Special Education">Special Education</option>
+            <option value="Secondary Education">Secondary Education</option>
+            <option value="Educational Leadership">Educational Leadership</option>
+            <option value="Physical Education">Physical Education</option>
+            <option value="ESL">English as a Second Language (ESL)</option>
+            <option value="Higher Education">Higher Education</option>
+            <option value="Journalism">Journalism</option>
+            <option value="Public Relations">Public Relations</option>
+            <option value="Media Studies">Media Studies</option>
+            <option value="Digital Media">Digital Media</option>
+            <option value="Advertising">Advertising</option>
+            <option value="Film Studies">Film Studies</option>
+            <option value="Radio and Television Production">Radio and Television Production</option>
+            <option value="Communication Studies">Communication Studies</option>
+            <option value="Pre-Law">Pre-Law</option>
+            <option value="Criminal Justice">Criminal Justice</option>
+            <option value="Forensic Science">Forensic Science</option>
+            <option value="Architecture">Architecture</option>
+            <option value="Interior Design">Interior Design</option>
+            <option value="Industrial Design">Industrial Design</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Fashion Design">Fashion Design</option>
+            <option value="Urban Planning">Urban Planning</option>
+            <option value="Environmental Studies">Environmental Studies</option>
+            <option value="Agricultural Science">Agricultural Science</option>
+            <option value="Environmental Engineering">Environmental Engineering</option>
+            <option value="Forestry">Forestry</option>
+            <option value="Marine Biology">Marine Biology</option>
+            <option value="Horticulture">Horticulture</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Linguistics">Linguistics</option>
+            <option value="Translation and Interpretation">Translation and Interpretation</option>
+            <option value="Kinesiology">Kinesiology</option>
+            <option value="Sports Management">Sports Management</option>
+            <option value="Recreation and Leisure Studies">Recreation and Leisure Studies</option>
+            <option value="Athletic Training">Athletic Training</option>
+            <option value="Exercise Science">Exercise Science</option>
+            <option value="Hospitality Management">Hospitality Management</option>
+            <option value="Tourism Management">Tourism Management</option>
+            <option value="Event Planning">Event Planning</option>
+            <option value="Pure Mathematics">Pure Mathematics</option>
+            <option value="Applied Mathematics">Applied Mathematics</option>
+            <option value="Actuarial Science">Actuarial Science</option>
+            <option value="Statistics">Statistics</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Environmental Policy">Environmental Policy</option>
+            <option value="Global Studies">Global Studies</option>
+            <option value="Cognitive Science">Cognitive Science</option>
+            <option value="Gender Studies">Gender Studies</option>
+            <option value="Neuroscience">Neuroscience</option>
+          </select>
+        </div>
+
+        <!--Student Year Dropdown-->
+        <div class="year-select">
+          <label for="year">Year</label>
+          <select name="year" id="year">
+            <option value="" disabled selected>Select your year</option>
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+            <option value="3rd">3rd</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+
+        <!--Student Type Dropdown-->
+        <div class="type-select">
+          <label for="student-type">Type of Student</label>
+          <select name="student-type" id="student-type">
+            <option value="" disabled selected>Select your year</option>
+            <option value="Transfer">Transfer</option>
+            <option value="International">International</option>
+            <option value="Non-traditional">Non-traditional</option>
+            <option value="Other">other</option>
+          </select>
+        </div>
+      </div>
+
+      <!--Student Interest Multi Select-->
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <div class="brand-name">
+      <p>LaserTag @ Irvine Valley College</p>
+    </div>
+
+  </div>
+  <script type="module" src="js/profile-setup.js"></script>
+</body>
+</html>
