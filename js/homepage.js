@@ -3,10 +3,16 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/fireba
 import { getAuth, onAuthStateChanged, signOut }  from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
 
+//API_KEY
+import dotenv from 'dotenv';
+dotenv.config();
+
+const apiKey = process.env.API_KEY;
+console.log(apiKey);
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDFxSmDkBUfBIQfi8lCvsSzwHNlYsPyzaA",
+    apiKey: apiKey,
     authDomain: "lasertag-72349.firebaseapp.com",
     projectId: "lasertag-72349",
     storageBucket: "lasertag-72349.firebasestorage.app",

@@ -5,10 +5,16 @@ import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+//API_KEY
+import dotenv from 'dotenv';
+dotenv.config();
+
+const apiKey = process.env.API_KEY;
+console.log(apiKey);
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDFxSmDkBUfBIQfi8lCvsSzwHNlYsPyzaA",
+  apiKey: apiKey,
   authDomain: "lasertag-72349.firebaseapp.com",
   projectId: "lasertag-72349",
   storageBucket: "lasertag-72349.firebasestorage.app",
